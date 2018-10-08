@@ -34,6 +34,12 @@ gulp.task('vendor', function() {
     ])
     .pipe(gulp.dest('./vendor'))
 
+  // Devicon
+  gulp.src([
+    './node_modules/devicon/*/**'
+  ])
+  .pipe(gulp.dest('./vendor/devicon'))
+
   // jQuery
   gulp.src([
       './node_modules/jquery/dist/*',
